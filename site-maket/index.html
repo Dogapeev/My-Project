@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <div class="popup">
+        <h6 class="h6-title">Войти на сайт</h6>
+        <form class="form" action="form.php" method="get">
+            <input class="inputlogin" type="text" autofocus required placeholder="Логин">
+            <input class="inputlogin inputpassword" type="password" required placeholder="Пароль">
+            <button class="buttonbox btn-popup button" type="submit">Войти</button>
+        </form>
+    </div>
+    <div class="all">
+        <header class="header">
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="logotype">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu_list"><a class="menu_link menu_link_active" href="index.html">Главная</a></li>
+                    <li class="menu_list"><a class="menu_link" href="students.html">Студенты</a></li>
+                    <li class="menu_list"><a class="menu_link" href="about.html">О курсе</a></li>
+                    <li class="menu_list"><a class="menu_link" href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="buttonbox b1"><a class="button" href="#">Войти</a></div>
+        </header>
+        <main class="content">
+            <h1 class="title">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
+            <img src="img/contentfoto.jpg" alt="главное фото" class="image">
+            <div class="content-info">
+                <div class="content-section">
+                    <div class="content-article">
+                        <h3 class="subtitle">Для кого этот курс</h3>
+                        <p class="about-text">Этот курс рассчитан на новичков, которые только начинают знакомство с
+                            веб-разработкой. В начале курса вы узнаете о том, как устроен Интернет и веб-сайты.
+                            Для обучения необходимо только владеть компьютерной грамотностью (пользоваться
+                            браузером, создавать папки и файлы, устанавливать программы).
+                        </p>
+                    </div>
+                    <div class="content-article">
+                        <h3 class="subtitle">Чему вы научитесь</h3>
+                        <p class="about-text">На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с
+                            нуля.
+                            Изучите основы языков <span class="thin-text">HTML, CSS</span> и немного <span
+                                class="thin-text">JavaScript</span>. Мы вместе сверстаем сайт нашей группы по этому
+                            макету.
+                            А затем вы <span class="color-text">сами</span> сверстаете свои личные странички в
+                            качестве
+                            домашнего задания и мы выложим все это на сервер.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="text-quotmarks">
+                    <p class="quotation-left">“</p>
+                    <h2 class="heading">Учимся вместе!
+                    </h2>
+                    <div class="shift">
+                        <p class="quotation-right">“</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="footer"> 2022 &copy; <a href="index.html" class="footer">учебный центр</a>
+    </footer>
+
+    <script>
+
+        const buttonEl = document.querySelector('.b1');
+        console.log(buttonEl)
+
+        const popUpBox = document.querySelector('.popup');
+        console.log(popUpBox)
+
+        buttonEl.addEventListener('click', function (e) {
+            popUpBox.classList.toggle('visible');
+        });
+
+
+
+    </script>
+</body>
+
+</html>

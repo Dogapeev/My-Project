@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    /* не даем превысить размер визуальной части*/
+}
+
+.popup {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    margin-left: 35vw;
+    width: 500px;
+    height: 418px;
+    border: 1px solid #213B7E;
+    background: #FFF;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    padding-right: 28px;
+    padding-left: 28px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h6-title {
+    margin-top: 26px;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 36px;
+}
+
+.inputlogin {
+    display: inline-block;
+    margin-left: 28px;
+    height: 55px;
+    width: 484px;
+    border: 1px solid #808080;
+    background: #FFF;
+    color: #808080;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 14px;
+    margin-left: 0;
+
+}
+
+.inputpassword {
+    margin-top: 56px;
+}
+
+.btn-popup {
+    margin-top: 56px;
+    margin-right: 0;
+
+}
+
+.visible {
+    display: flex;
+}
+
+.all {
+    flex-grow: 1;
+}
+
+.center {
+    padding-left: calc(50% - 1268px/2);
+    padding-right: calc(50% - 1268px/2);
+    /* 1268px ширина контентной части (не бокса)*/
+}
+
+.header {
+    background: #213B7E;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* 1268px ширина контентной части (не бокса)*/
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-left: 54px;
+}
+
+.menu_link {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-decoration-line: underline;
+    padding: 28px 18px;
+    display: block;
+}
+
+.menu_link_active {
+    background-color: #FFFFFF;
+    color: #213B7E;
+    text-decoration: none;
+}
+
+.buttonbox {
+    width: 153px;
+    height: 50px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EA5D21;
+    border: none;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 16px;
+}
+
+.footer {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #213B7E;
+    color: #FFFFFF80;
+    margin-top: 32px;
+}
+
+.content {
+    padding-left: calc(50% - 927px/2);
+    padding-right: calc(50% - 927px/2);
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 33px;
+    margin-bottom: 25px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+.image {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.content-info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 32px;
+
+}
+
+.content-section {
+    max-width: 634px;
+}
+
+.content-article {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 15px;
+}
+
+.subtitle {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.about-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.heading {
+    color: #646464;
+    font-family: 'Lobster', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 9px;
+    margin-left: 5px;
+}
+
+.thin-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.color-text {
+    color: #CF5510;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-quotmarks {
+    display: flex;
+    margin-top: 29px;
+    width: 183px;
+    margin-left: 10px;
+}
+
+.quotation-left {
+    color: #646464;
+    font-family: Lobster;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+.quotation-right {
+    color: #646464;
+    font-family: Lobster;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 80px;
+}
+
+.shift {
+    margin-top: 45px;
+    position: absolute;
+    margin-left: 155px;
+}
+
+.students-main {
+    padding-left: calc(50% - 1218px/2);
+    padding-right: calc(50% - 1218px/2);
+}
+
+.student-section {
+    margin-top: 37px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.student-header {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.students-info-block {
+    margin-top: 24px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.student-info {
+    width: 200px;
+    position: relative;
+}
+
+.student-foto {
+    width: 200px;
+}
+
+.name {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.name-small {
+    padding: 0 22px;
+}
+
+.new-student {
+    background-color: #3AA828;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 5px;
+    line-height: 24px;
+    width: 89px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    position: absolute;
+    left: 119px;
+    top: -12px;
+    /* top и left работают только при определении родительского блока position:relative, но если через margin-top и margin-left можно без такого определения, при это margin может быть отрицательным*/
+}
+
+.contact-main {
+    padding-left: calc(50% - 1300px/2);
+    padding-right: calc(50% - 1300px/2);
+
+}
+
+.h2-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
+
+.position {
+    padding-left: calc(50% - 1300px/2 + 200px);
+    margin-left: 16px;
+}
+
+.grow-map {
+    padding: 0px calc(50% - 1300px/2);
+    display: flex;
+    padding: 0px 16px;
+}
+
+.map-margin {
+    flex-grow: 1;
+}
+
+.h5-title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.text-box-contacts {
+    max-width: 439px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.image-style {
+    margin-top: 15px;
+    display: block;
+    /* border: 2px solid #EA5D21;*/
+    border-image: 2px solid #EA5D21;
+}
+
+@media (max-width: 1024px) {
+    .menu_link {
+        font-size: 16px;
+    }
+
+    .menu {
+        margin-left: 0;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 675px) {
+    .menu {
+        flex-wrap: wrap;
+        order: 0;
+        max-width: 215px;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .menu_list {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .menu_link {
+        padding: 12px 18px;
+        text-decoration-line: none;
+    }
+
+    .logo {
+        margin-left: 0;
+        order: 0;
+    }
+
+    .buttonbox {
+        flex-grow: 1;
+        margin-right: 0;
+        order: 1;
+        height: 47px;
+    }
+
+    .header {
+        align-items: start;
+
+    }
+
+    .content-info {
+        flex-wrap: wrap;
+    }
+
+    .title {
+        margin-top: 24px;
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .text-quotmarks {
+        margin-top: 10px;
+    }
+
+    .students-info-block {
+        justify-content: center;
+    }
+
+    .student-header {
+        text-align: center;
+    }
+
+    .grow-map {
+        padding: 0;
+    }
+
+    .h2-title {
+        font-size: 24px;
+        margin-top: 24px;
+        margin-bottom: 10px;
+
+    }
+
+    .h5-title {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+
+    .text-box-contacts {
+        text-wrap: wrap;
+        font-size: 16px;
+
+    }
+
+    .image-style {
+        margin-left: 0;
+    }
+
+    .switch {
+        display: none;
+    }
+
+}
